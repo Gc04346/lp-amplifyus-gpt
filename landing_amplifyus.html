@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AmplifyUs - Viva da Sua Música</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #741EAA, #0C09DB, #0AC4F9);
+            color: white;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        .hero {
+            padding: 100px 20px 60px;
+            text-align: center;
+        }
+
+        .hero h1,
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-button {
+            background-color: #D71A59;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            font-size: 1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FF6846;
+        }
+
+        .section {
+            padding: 60px 20px;
+            background-color: white;
+            color: #222;
+            text-align: center;
+        }
+
+        .section.alt {
+            background-color: #f5f5f5;
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .features,
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature,
+        .step {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 300px;
+            flex: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quotes p {
+            font-style: italic;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #000;
+            color: #aaa;
+        }
+
+        /* MOBILE FIRST */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px 40px;
+            }
+
+            .hero h1,
+            .hero h2,
+            .section h2 {
+                font-size: 1.8em;
+            }
+
+            .hero p,
+            .section p {
+                font-size: 1em;
+            }
+
+            .features,
+            .steps {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature,
+            .step {
+                max-width: 90%;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://storage.googleapis.com/amplifyus.app/LogoAmplifyUs_App.png" alt="AmplifyUs Logo">
+    </header>
+
+    <div class="hero">
+        <h1>Sua música é boa demais pra ficar escondida</h1>
+        <p>O AmplifyUs te ajuda a transformar sua carreira musical com dados, estratégias e automação — enquanto você
+            foca no que nasceu pra fazer: música.</p>
+        <button class="cta-button">Comece agora – É gratuito</button>
+    </div>
+
+    <div class="section">
+        <h2>Você se identifica?</h2>
+        <p>
+            Posta música e ninguém escuta? Cansado de estudar algoritmo enquanto sua arte fica de lado?
+            Faz tudo sozinho e não vê resultado? Tem talento, mas não sabe o próximo passo?
+            Então o AmplifyUs é pra você.
+        </p>
+    </div>
+
+    <div class="section alt">
+        <h2>Tudo que sua carreira precisa. Num só lugar.</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>📊 Dashboard com Métricas</h3>
+                <p>Veja seu desempenho no YouTube, Spotify, TikTok, Deezer e Instagram em um só lugar.</p>
+            </div>
+            <div class="feature">
+                <h3>🤖 Campanhas Automatizadas</h3>
+                <p>Impulsione músicas e posts com inteligência. Menos gasto, mais resultado.</p>
+            </div>
+            <div class="feature">
+                <h3>📅 Playbooks Estratégicos</h3>
+                <p>Passo a passo claro para cada fase da sua carreira. Sem enrolação.</p>
+            </div>
+            <div class="feature">
+                <h3>🔍 Análise de Feed</h3>
+                <p>Descubra o que funciona no seu Insta e aumente seu engajamento com estratégia.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Quem tá usando, fala:</h2>
+        <div class="quotes">
+            <p>“Chega de depender de sorte. O AmplifyUs me mostrou o caminho.”</p>
+            <p>“Parei de cantar só pra minha mãe.”</p>
+            <p>“Nunca mais fiquei perdido no lançamento de uma música.”</p>
+            <p>“Agora eu sei onde investir meu tempo.”</p>
+        </div>
+    </div>
+
+    <div class="section alt">
+        <h2>Como funciona</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Crie sua conta</h3>
+                <p>É rápido e gratuito. Sem complicação.</p>
+            </div>
+            <div class="step">
+                <h3>2. Conecte suas redes</h3>
+                <p>Junte Spotify, Instagram, TikTok e mais na mesma visão.</p>
+            </div>
+            <div class="step">
+                <h3>3. Aplique as estratégias</h3>
+                <p>Receba recomendações práticas e comece a escalar sua carreira.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pra quem é o AmplifyUs?</h2>
+        <p>Se você vive de música ou sonha em viver, é pra você.<br />
+            Artistas iniciantes, independentes, compositores, produtores. Se você tá no corre da música, a gente tá com
+            você.</p>
+    </div>
+
+    <div class="hero">
+        <h2>Você não precisa mais caminhar no escuro</h2>
+        <p>O AmplifyUs te mostra o próximo passo com clareza, inteligência e resultado.</p>
+        <button class="cta-button">Comece agora gratuitamente</button>
+    </div>
+
+    <footer>
+        © 2025 AmplifyUs. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
